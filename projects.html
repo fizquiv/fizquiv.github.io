@@ -45,31 +45,79 @@
   <!-- Projects Grid -->
   <main class="container py-5">
     <div class="row g-4">
-      <!-- Project 1 Container -->
+      <!-- Project 1: Offgrid -->
       <div class="col-lg-6">
         <div class="card h-100 shadow-sm border-0">
           <div class="card-body p-4">
             <h3 class="card-title h4 fw-bold text-primary mb-3">Offgrid</h3>
             <p class="card-text text-secondary mb-4">
-              Add your project description here. Explain what the project does, what technologies you used,
-              and what problems it solves. This is where you can showcase your technical skills and
-              creative problem-solving abilities.
+              Offgrid is a React Native app that enables hikers to stay connected in remote areas without cell service.
+              The app pairs with an ESP32 device over Bluetooth Low Energy (BLE), which relays text messages via
+              long-range LoRa signals. This creates a peer-to-peer texting experience that works entirely offline,
+              allowing hikers to coordinate safely in environments where traditional communication tools fail.
+              I developed the mobile app, which provides a familiar chat interface and manages BLE connections, while a
+              teammate handled the ESP32 firmware. Offgrid currently supports text messaging, and its design emphasizes
+              reliability and simplicity for outdoor use.
+              Planned features include location sharing, group chats, and SOS alerts—capabilities that go beyond what
+              traditional walkie-talkies offer, such as real-time location tracking for safety.
             </p>
 
             <!-- Project Details -->
             <div class="mt-4 pt-3 border-top">
               <h5 class="fw-semibold mb-3">Technologies Used:</h5>
               <div class="d-flex flex-wrap gap-2 mb-4">
-                <span class="tech-tag">Technology 1</span>
-                <span class="tech-tag">Technology 2</span>
-                <span class="tech-tag">Technology 3</span>
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">LoRa</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">BLE</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a href="https://github.com/fizquiv/offgrid" class="btn btn-outline-secondary">
+                  📁 View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Shattered Timeline -->
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body p-4">
+            <h3 class="card-title h4 fw-bold text-primary mb-3">Shattered Timeline</h3>
+            <p class="card-text text-secondary mb-4">
+              Shattered Timeline is a roguelite top-down game built with JavaScript on the HTML5 Canvas API, featuring
+              a fully custom game engine developed from scratch by a three-person team. The engine handles rendering,
+              collision detection, player movement, combat logic, and UI — all without relying on external game
+              frameworks.
+              The game includes a player account system with login and authentication, backed by a Node.js + Express
+              server connected to a MySQL database. Player stats, progression, and unlocked weapons are saved
+              persistently, and the repository provides setup instructions for hosting the database locally.
+              Gameplay features include five levels, a store system, and boss fights on each of the first three
+              floors. Development was managed with Git/GitHub, with each teammate working in separate branches. I
+              contributed primarily to the engine architecture, combat system, and user interface, while also
+              supporting the database design.
+              Future improvements include the completion of enemy sprite animations to enhance the visual experience.
+            </p>
+
+            <!-- Project Details -->
+            <div class="mt-4 pt-3 border-top">
+              <h5 class="fw-semibold mb-3">Technologies Used:</h5>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">JavaScript(ES6)</span>
+                <span class="tech-tag">HTML5 Canvas API</span>
+                <span class="tech-tag">Node.js + Express</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Git/GitHub</span>
               </div>
 
               <div class="d-flex flex-wrap gap-3">
                 <a href="#" class="btn btn-outline-primary">
                   🔗 Live Demo
                 </a>
-                <a href="#" class="btn btn-outline-secondary">
+                <a href="https://github.com/Bairoflus/Proyecto-Videojuego" class="btn btn-outline-secondary">
                   📁 View Code
                 </a>
               </div>
