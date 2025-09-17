@@ -5,66 +5,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fausto Izquierdo - Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body
-  class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-200 font-sans min-h-screen flex flex-col">
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">Fausto Izquierdo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="aboutme.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="projects.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <header class="text-center py-16">
-    <h1 class="text-5xl font-extrabold mb-4 hover:scale-105 transition-transform duration-300">Fausto Izquierdo</h1>
-    <p class="text-xl mb-6 text-gray-400">Software Engineer</p>
-    <a target="_blank"
-      href="https://docs.google.com/document/d/1PzEvRij2lfHp8FAzrtxHUXu_q9YbdM5r0sse5z3YnF4/edit?usp=sharing"
-      rel="noopener noreferrer"
-      class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
-      📄 View My Resume
-    </a>
-  </header>
+  <!-- Hero Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-4 hero-gradient">Fausto Izquierdo</h1>
+      <p class="lead fs-3 text-secondary mb-4">Software Engineer</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a target="_blank"
+          href="https://docs.google.com/document/d/1PzEvRij2lfHp8FAzrtxHUXu_q9YbdM5r0sse5z3YnF4/edit?usp=sharing"
+          rel="noopener noreferrer" class="btn btn-primary btn-lg px-4">
+          View My Resume
+        </a>
+        <a href="aboutme.html" class="btn btn-outline-primary btn-lg px-4">
+          Get to Know Me
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Main Sections -->
+  <main class="container py-5" id="projects">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold mb-3">What I Do</h2>
+      <p class="lead text-secondary">Explore my work and discover who I am</p>
+    </div>
 
-  <main class="flex-grow max-w-4xl mx-auto px-6">
-    <section class="mb-12 group">
-      <h2
-        class="text-3xl font-semibold mb-4 border-b pb-2 border-gray-700 group-hover:text-blue-400 transition-colors duration-300">
-        📂 Mini Projects
-      </h2>
-      <p class="mb-4 text-gray-400">Small projects showcasing specific skills.</p>
-      <a href="https://fizquiv.github.io/mini-projects/" rel="noopener noreferrer"
-        class="text-blue-400 group-hover:text-blue-300 underline underline-offset-4 hover:underline-offset-8 transition-all duration-300">
-        → Explore Mini Projects
-      </a>
-    </section>
+    <div class="row g-4">
+      <!-- Personal Projects Card -->
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body p-4">
+            <h3 class="card-title h4 fw-bold text-primary mb-3">My Work</h3>
+            <p class="card-text text-secondary">Personal passion projects where I applied my learning in creative ways.
+              These showcase my ability to take ideas from concept to deployment, demonstrating full-stack development
+              skills and problem-solving abilities.</p>
+            <a href="projects.html" class="btn btn-outline-primary">
+              Explore Personal Projects →
+            </a>
+          </div>
+        </div>
+      </div>
 
-    <section class="mb-12 group">
-      <h2
-        class="text-3xl font-semibold mb-4 border-b pb-2 border-gray-700 group-hover:text-blue-400 transition-colors duration-300">
-        💻 Personal Projects
-      </h2>
-      <p class="mb-4 text-gray-400">Personal passion projects where I applied my learning in creative ways.</p>
-      <a href="" rel="noopener noreferrer"
-        class="text-blue-400 group-hover:text-blue-300 underline underline-offset-4 hover:underline-offset-8 transition-all duration-300">
-        → Explore Personal Projects
-      </a>
-    </section>
-
-    <section class="mb-12 group">
-      <h2
-        class="text-3xl font-semibold mb-4 border-b pb-2 border-gray-700 group-hover:text-blue-400 transition-colors duration-300">
-        More about me...
-      </h2>
-      <p class="mb-4 text-gray-400">Software development simple homework assignments that demonstrate multiple skills.
-      </p>
-      <a href="aboutme.html"
-        class="text-blue-400 group-hover:text-blue-300 underline underline-offset-4 hover:underline-offset-8 transition-all duration-300">
-        → Explore Homework Assignments
-      </a>
-    </section>
+      <!-- About Me Card -->
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body p-4">
+            <h3 class="card-title h4 fw-bold text-primary mb-3">More About Me</h3>
+            <p class="card-text text-secondary">Learn about my path as a developer, my interests beyond coding, and what
+              drives me. From mathematics competitions to half-marathons, discover the experiences that shaped who I am
+              today.</p>
+            <a href="aboutme.html" class="btn btn-outline-primary">
+              Read My Story →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-700 mt-16">
-    © 2025 Fausto Izquierdo. Built with ♥ using GitHub Pages and Tailwind CSS.
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p class="text-muted mb-0">© 2025 Fausto Izquierdo</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
