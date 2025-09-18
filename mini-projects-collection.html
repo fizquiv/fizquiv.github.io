@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Projects - Fausto Izquierdo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">Fausto Izquierdo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="aboutme.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item ms-2">
+            <button id="theme-toggle" class="theme-toggle">🌙 Dark</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-4 hero-gradient">Mini Projects</h1>
+      <p class="lead fs-4 text-secondary">A collection of small projects showcasing front-end skills and creativity</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <main class="container py-5">
+    <div class="row g-4">
+      <!-- Image Finder Project -->
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="./mini-projects/pixabay-api/demo-ss.png" alt="Image Finder Screenshot" class="card-img-top"
+            style="height: 250px; object-fit: cover;">
+          <div class="card-body p-4">
+            <h3 class="card-title h4 fw-bold text-primary mb-3">🔍 Image Finder</h3>
+            <p class="card-text text-secondary mb-4">
+              Responsive image search app powered by the Pixabay API. Features custom dark theme, pagination, and user
+              input validation for finding high-quality images.
+            </p>
+
+            <!-- Project Details -->
+            <div class="mt-4 pt-3 border-top">
+              <h5 class="fw-semibold mb-3">Technologies Used:</h5>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Pixabay API</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a href="./mini-projects/pixabay-api/index.html" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-primary">
+                  🔗 Live Demo
+                </a>
+                <a href="https://github.com/fizquiv/mini-projects/tree/main/pixabay-api" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-outline-secondary">
+                  📁 View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Finder Project -->
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="./mini-projects/themealdb-api/demo-ss.png" alt="Recipe Finder Screenshot" class="card-img-top"
+            style="height: 250px; object-fit: cover;">
+          <div class="card-body p-4">
+            <h3 class="card-title h4 fw-bold text-primary mb-3">🍽️ Recipe Finder</h3>
+            <p class="card-text text-secondary mb-4">
+              Responsive recipe search app powered by TheMealDB API. Features category filtering, recipe details with
+              ingredients and instructions, favorites management with local storage, and Bootstrap modals.
+            </p>
+
+            <!-- Project Details -->
+            <div class="mt-4 pt-3 border-top">
+              <h5 class="fw-semibold mb-3">Technologies Used:</h5>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">TheMealDB API</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Local Storage</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a href="./mini-projects/themealdb-api/index.html" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-primary">
+                  🔗 Live Demo
+                </a>
+                <a href="https://github.com/fizquiv/mini-projects/tree/main/themealdb-api" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-outline-secondary">
+                  📁 View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Home -->
+    <div class="text-center mt-5">
+      <a href="./projects.html" class="btn btn-primary btn-lg px-4">← Back to Projects</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p class="text-muted mb-0">© 2025 Fausto Izquierdo</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="theme-toggle.js"></script>
+</body>
+
+</html>

@@ -5,21 +5,105 @@
   --accent-color: #20c997;
   --text-primary: #212529;
   --text-secondary: #6c757d;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --navbar-bg: #ffffff;
+  --card-bg: #ffffff;
+  --footer-bg: #f8f9fa;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --primary-color: #8b5cf6;
+  --secondary-color: #9ca3af;
+  --accent-color: #a855f7;
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --navbar-bg: #111827;
+  --card-bg: #1f2937;
+  --footer-bg: #111827;
 }
 
 /* Custom gradient background */
 body {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--primary-color);
+  color: var(--bg-primary);
+}
+
+/* Override Bootstrap navbar for dark theme */
+[data-theme="dark"] .navbar {
+  background-color: var(--navbar-bg) !important;
+  border-bottom: 1px solid #374151;
+}
+
+[data-theme="dark"] .navbar-brand,
+[data-theme="dark"] .nav-link {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Override Bootstrap cards for dark theme */
+[data-theme="dark"] .card {
+  background-color: var(--card-bg) !important;
+  border-color: #374151 !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .card-text {
+  color: var(--text-secondary) !important;
+}
+
+/* Override Bootstrap footer for dark theme */
+[data-theme="dark"] .bg-light {
+  background-color: var(--footer-bg) !important;
+}
+
+[data-theme="dark"] .text-muted {
+  color: var(--text-secondary) !important;
 }
 
 /* Hero section styling */
 .hero-gradient {
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background: linear-gradient(135deg, #0d6efd, #20c997);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: inline-block;
+}
+
+/* Dark theme hero gradient */
+[data-theme="dark"] .hero-gradient {
+  background: linear-gradient(135deg, #5a32b5 0%, #8331cf 50%, #bd7bff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 /* Image styling */
@@ -74,6 +158,12 @@ body {
   margin: 0.25rem;
 }
 
+/* Dark theme tech tags */
+[data-theme="dark"] .tech-tag {
+  background-color: #4c1d95;
+  color: #c4b5fd;
+}
+
 /* Highlight text */
 .highlight {
   color: var(--accent-color);
@@ -81,6 +171,49 @@ body {
   background-color: rgba(32, 201, 151, 0.1);
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
+}
+
+/* Bootstrap button overrides for dark theme */
+[data-theme="dark"] .btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .btn-outline-primary {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] .btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Bootstrap link overrides for dark theme */
+[data-theme="dark"] .link-primary {
+  color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] a {
+  color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] a:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Bootstrap text color overrides for dark theme */
+[data-theme="dark"] .text-primary {
+  color: var(--primary-color) !important;
 }
 
 /* Mobile responsive images */

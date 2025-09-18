@@ -29,6 +29,9 @@
           <li class="nav-item">
             <a class="nav-link fw-medium" href="projects.html">Projects</a>
           </li>
+          <li class="nav-item ms-2">
+            <button id="theme-toggle" class="theme-toggle">🌙 Dark</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -125,6 +128,117 @@
           </div>
         </div>
       </div>
+
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body p-4">
+            <h3 class="card-title h4 fw-bold text-primary mb-3">Protección Civil Cuajimalpa – Emergency Reporting System
+            </h3>
+            <p class="card-text text-secondary mb-4">
+              This project involved developing a web-based report management system for Protección Civil in
+              Cuajimalpa,
+              designed to streamline the registration, analysis, and supervision of emergency reports. Previously,
+              information was stored manually in Excel, leading to delays, errors, and lack of traceability. The
+              finished system provides:
+            </p>
+            <ul class="text-secondary mb-4">
+              <li>Role-based access control for collaborators, shift supervisors, and administrators.</li>
+
+              <li>creation and validation with unique folios, patient details, emergency type, response times, and
+                resource usage.</li>
+
+              <li>Authentication & SSO integration with optional 2FA for administrators.</li>
+
+              <li>Dashboards and analytics for tracking response times, emergencies by type, distribution by gender, and
+                performance by shift.</li>
+
+              <li>Audit logs for all critical actions (report edits, folio changes, deletions).</li>
+
+              <li>Exporting tools for generating official reports in PDF and Excel.</li>
+            </ul>
+
+            <p class="card-text text-secondary mb-4">
+              The architecture was built in three layers (Frontend, Backend, Data) with a Node.js + Express backend,
+              MongoDB database, and a responsive web frontend accessible on desktop and mobile. The system ensures
+              secure HTTPS communication and encrypted sensitive data
+            </p>
+
+            <!-- Project Details -->
+            <div class="mt-4 pt-3 border-top">
+              <h5 class="fw-semibold mb-3">Technologies Used:</h5>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">React Admin</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Node.js + Express</span>
+                <span class="tech-tag">SSO, 2FA</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#" class="btn btn-outline-primary">
+                  🔗 Live Demo
+                </a>
+                <a href="https://github.com/Bairoflus/Proyecto-Videojuego" class="btn btn-outline-secondary">
+                  📁 View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body p-4">
+            <h3 class="card-title h4 fw-bold text-primary mb-3">Mini-projects collection
+            </h3>
+            <p class="card-text text-secondary mb-4">
+              This project involved developing a web-based report management system for Protección Civil in
+              Cuajimalpa,
+              designed to streamline the registration, analysis, and supervision of emergency reports. Previously,
+              information was stored manually in Excel, leading to delays, errors, and lack of traceability. The
+              finished system provides:
+            </p>
+            <ul class="text-secondary mb-4">
+              <li>Role-based access control for collaborators, shift supervisors, and administrators.</li>
+
+              <li>creation and validation with unique folios, patient details, emergency type, response times, and
+                resource usage.</li>
+
+              <li>Authentication & SSO integration with optional 2FA for administrators.</li>
+
+              <li>Dashboards and analytics for tracking response times, emergencies by type, distribution by gender, and
+                performance by shift.</li>
+
+              <li>Audit logs for all critical actions (report edits, folio changes, deletions).</li>
+
+              <li>Exporting tools for generating official reports in PDF and Excel.</li>
+            </ul>
+
+            <p class="card-text text-secondary mb-4">
+              The architecture was built in three layers (Frontend, Backend, Data) with a Node.js + Express backend,
+              MongoDB database, and a responsive web frontend accessible on desktop and mobile. The system ensures
+              secure HTTPS communication and encrypted sensitive data
+            </p>
+
+            <!-- Project Details -->
+            <div class="mt-4 pt-3 border-top">
+              <h5 class="fw-semibold mb-3">Technologies Used:</h5>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">JavaScript(ES6)</span>
+                <span class="tech-tag">HTML5 Canvas API</span>
+                <span class="tech-tag">Node.js + Express</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Git/GitHub</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a href="./mini-projects-collection.html" class="btn btn-outline-secondary">
+                  📁 View collection
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Back to Home -->
@@ -141,6 +255,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="theme-toggle.js"></script>
 </body>
 
 </html>
