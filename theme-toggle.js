@@ -30,9 +30,9 @@ class ThemeToggle {
     const toggleBtn = document.getElementById("theme-toggle");
     if (toggleBtn) {
       if (this.currentTheme === "dark") {
-        toggleBtn.innerHTML = "☀️ Light";
+        toggleBtn.innerHTML = "Light Theme";
       } else {
-        toggleBtn.innerHTML = "🌙 Dark";
+        toggleBtn.innerHTML = "Dark Theme";
       }
     }
   }
